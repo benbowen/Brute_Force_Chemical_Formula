@@ -1,0 +1,101 @@
+
+
+
+
+<html>
+<head>
+	<form method = "GET" form action="cgi-bin/BruteForceFormulae.cgi">
+		<TABLE BORDER = "1">
+			<TR>
+				<TD>m/z</TD>
+				<TD>
+					<INPUT TYPE = "TEXT" NAME="mass" value = "506.995745" size = "8">
+						</TD>
+						<TD>Final mass must be less than 2000 Da</TD>
+							
+						</TR>
+						<TR>
+							<TD>Tolerance (ppm):</TD>
+							<TD> <input name="tol" value="10" size="8"></TD>
+							<TD>Uncertainty must be less than 1 Da</TD>
+							</TR>
+							<TR>
+						<TD>Charge:</TD> 
+						<TD><input name="charge" value="1" size="8"></TD>
+						<TD>Allowable values are [-3,-2,-1,0,1,2,3]</TD>
+						</TR>
+						</TABLE>
+<br>
+<TABLE BORDER = "1">
+	<CAPTION>Element constrains must be within 100 million iterations of the search space</CAPTION>
+	<TR>
+		<TD>Element</TD>
+		<TD>Min #</TD>
+		<TD>Max #</TD>
+			</TR>
+	<TR>	
+	<TD>Hydrogen:</TD>
+	<TD> <input name="minh" value="0" size="5"></TD>
+	<TD> <input name="maxh" value="200" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Carbon:</TD>
+	<TD> <input name="minc" value="0" size="5"></TD>
+	<TD> <input name="maxc" value="100" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Nitrogen:</TD>
+	<TD> <input name="minn" value="0" size="5"></TD>
+	<TD> <input name="maxn" value="6" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Oxygen:</TD>
+	<TD> <input name="mino" value="0" size="5"></TD>
+	<TD> <input name="maxo" value="20" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Phosphorous:</TD>
+	<TD> <input name="minp" value="0" size="5"></TD>
+	<TD> <input name="maxp" value="6" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Sulfur:</TD>
+	<TD> <input name="mins" value="0" size="5"></TD>
+	<TD> <input name="maxs" value="6" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Sodium:</TD>
+	<TD> <input name="minna" value="0" size="5"></TD>
+	<TD> <input name="maxna" value="0" size="5"></TD>
+	</TR>
+	
+	<TR>	
+	<TD>Potassium:</TD>
+	<TD> <input name="mink" value="0" size="5"></TD>
+	<TD> <input name="maxk" value="0" size="5"></TD>
+	</TR>
+	
+</TABLE>	
+<br>
+	<div><input type="submit" value="Get Formulae!" style="width:100px;height:50px"></div>
+	</form>
+</head>
+</html>
+
+
+
+
+
+<!-- <form method = "POST" action = "http://127.0.0.1/~bpb/cgi-bin/test.py">
+	<p>Your first asd name: <input type = "text" name = "firstname">
+		<p>Your last name: <input type = "text" name = "lastname">
+			<p>Click here to submit form: <input type = "submit" value = "Yeah!">
+				<input type = "hidden" name = "session" value="1f9a2">
+</form> -->		
+</HTML>
